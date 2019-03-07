@@ -1,0 +1,4 @@
+rootProject.name = 'yesdata'
+include ':yesdata-annotations'
+include ':yesdata-checker'
+
