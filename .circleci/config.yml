@@ -21,10 +21,10 @@ jobs:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}
       - store_artifacts: # for display in Artifacts: https://circleci.com/docs/2.0/artifacts/
-          path: app/build/reports
+          path: yesdata-checker/build/reports
           destination: reports
       - store_test_results: # for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
-          path: app/build/test-results
+          path: yesdata-checker/build/test-results
       - deploy:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
