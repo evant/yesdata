@@ -7,7 +7,7 @@ import org.junit.Test;
 public class YesdataCheckerTest {
     private static final String TEST = "Test.java";
     // language=java
-    private static final String IMPORT_DATA = "";
+    private static final String IMPORT_DATA = "import me.tatarka.yesdata.annotation.Data;";
 
     private final CompilationTestHelper compiler = CompilationTestHelper.newInstance(YesdataChecker.class, getClass());
 
